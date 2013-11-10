@@ -109,6 +109,7 @@ def player2_symbol(jogada):
     turtle.pencolor('red')
     turtle.circle(75)    
 
+#Atribui a jogada ao tabuleiro
 def atri(player,jogada, board_ac):
     board_ac[jogada-1]= player
     if player==-1:
@@ -144,3 +145,5 @@ def main():
         else:
             player_turn(n_jogada, board_ac)
     turtle.exitonclick()
+    
+main()
